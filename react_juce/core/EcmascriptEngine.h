@@ -149,9 +149,12 @@ namespace reactjuce
         /** Detaches the from the current debug session/attachment. */
         void debuggerDetach();
 
+        //==============================================================================
+        // Public type definition for the implementation details
+        struct Pimpl;
+
     private:
         //==============================================================================
-        struct Pimpl;
         std::unique_ptr<Pimpl> mPimpl;
 
         //==============================================================================
